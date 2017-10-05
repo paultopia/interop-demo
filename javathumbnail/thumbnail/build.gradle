@@ -1,0 +1,21 @@
+plugins {
+id 'com.github.johnrengelman.shadow' version '2.0.1'
+id 'java'
+}
+
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'thumbnail.Thumbnail'
+    }
+}
+
+dependencies {
+             compile 'org.imgscalr:imgscalr-lib:4.2'    
+}
+
+repositories {
+             mavenCentral()          
+}
+

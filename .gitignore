@@ -1,0 +1,10 @@
+*.xml
+*.jar
+*.class
+pom.*
+javathumbnail/thumbnail/build/
+javathumbnail/thumbnail/.gradle/
+clojurethumbnail/.lein-*
+clojurethumbnail/.nrepl*
+clojurethumbnail/target/
+
