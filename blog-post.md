@@ -178,7 +178,7 @@ There is one little glitch at the end, though. It turns out that if we look at [
 
 We don't actually need to give that parameter anything for our simple example, and the Java compiler is kind enough that it will let us leave off a varargs parameter entirely if we don't need it. Unfortunately, the Clojure compiler is not so generous (this might be the only case in the entire history of coding where Clojure is more verbose than Java), and makes us explicitly pass these arguments in.
 
-Accordingly, we have to construct an empty array that would have the Java type `BufferedImageOp[]` and pass that into `resize` as the third argument.  The [into-array](http://clojuredocs.org/clojure.core/into-array) function in clojure.core provides that capacity.
+Accordingly, we have to construct an empty array that would have the Java type `BufferedImageOp[]` (that's Java-ese for an array of `BufferedImageOp`s, where a `BufferedImageOp` is just... I'm not sure, but it's the thing that the signature of `resize` demands, so it's what we have to give it) and pass that into `resize` as the third argument.  The [into-array](http://clojuredocs.org/clojure.core/into-array) function in clojure.core provides that capacity. Arrays are super primitive, and the JVM needs a type even for a zero-length array. 
 
 The main function is self-explanatory after all that---it's just a direct translation of method calls to Clojure function calls.
 
