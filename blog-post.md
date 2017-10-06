@@ -191,3 +191,5 @@ Resources:
 [Another more complicated example of using imgscalr from Clojure](https://gist.github.com/jkk/3959731)
 
 [StackOverflow answer explaining the varargs quirk](https://stackoverflow.com/a/18501367/4386239)
+
+[JIRA issue on Clojure for fixing the varargs quirk, has been open for over 7 years (!!!)](https://dev.clojure.org/jira/browse/CLJ-440)
